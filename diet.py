@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Spyder Editor
-
-This is a temporary script file.
-"""
-
-#!/usr/bin/python
-
-# Copyright 2018, Gurobi Optimization, LLC
-
-# Solve the classic diet model, showing how to add constraints
-# to an existing model.
 
 from gurobipy import *
 
