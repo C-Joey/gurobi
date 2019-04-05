@@ -1,1 +1,1 @@
-# gurobi
+# gurobi-python
