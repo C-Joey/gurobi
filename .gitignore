@@ -1,5 +1,5 @@
 .ipynb_checkpoints
-idea
+.idea
 gurobi.log
 *.xml
 venv
