@@ -1,16 +1,16 @@
 
 # 简单实例
 ## **求解LP问题如下**
->$ \max=x+y+2z \\ $
+$$ \max=x+y+2z  $$
 
->$
+$$
 s.b
 \begin{cases}
-    x+2y+3z & \leq 4 \\ 
+    x+2y+3z & \leq 4 \\
     x+y &\geqslant  1 \\
     x,y,z & binary
 \end{cases}  
-$
+$$
 
 ## **求解过程：**
 
@@ -63,16 +63,15 @@ except GurobiError:
     Presolve removed 2 rows and 3 columns
     Presolve time: 0.00s
     Presolve: All rows and columns removed
-    
+
     Explored 0 nodes (0 simplex iterations) in 0.02 seconds
     Thread count was 1 (of 8 available processors)
-    
-    Solution count 2: 3 2 
-    
+
+    Solution count 2: 3 2
+
     Optimal solution found (tolerance 1.00e-04)
     Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
     x 1.0
     y 0.0
     z 1.0
     Obj: 3.0
-
