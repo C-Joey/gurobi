@@ -1,4 +1,4 @@
 # gurobi-python
-* [simple exmaple](https://github.com/C-Joey/gurobi/blob/master/Model/Example%20mip1.ipynb)
-* [diet](https://github.com/C-Joey/gurobi/blob/master/Model/diet.ipynb)
+* [simple exmaple](/Model/Example%20mip1.ipynb)
+* [diet](/Model/diet.ipynb)
 * [netflow](/Model/netflow.ipynb)
