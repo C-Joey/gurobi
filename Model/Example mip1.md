@@ -50,7 +50,8 @@ except GurobiError:
     print("Error")
 ```
 
->    Optimize a model with 2 rows, 3 columns and 5 nonzeros
+
+    Optimize a model with 2 rows, 3 columns and 5 nonzeros
     Variable types: 0 continuous, 3 integer (3 binary)
     Coefficient statistics:
       Matrix range     [1e+00, 3e+00]
@@ -62,12 +63,12 @@ except GurobiError:
     Presolve time: 0.00s
     Presolve: All rows and columns removed
 
->    Explored 0 nodes (0 simplex iterations) in 0.02 seconds
+    Explored 0 nodes (0 simplex iterations) in 0.02 seconds
     Thread count was 1 (of 8 available processors)
 
->    Solution count 2: 3 2
+    Solution count 2: 3 2
 
->    Optimal solution found (tolerance 1.00e-04)
+    Optimal solution found (tolerance 1.00e-04)
     Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
     x 1.0
     y 0.0
