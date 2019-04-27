@@ -1,4 +1,4 @@
 # gurobi-python
-* [simple exmaple](Model\Example mip1.md)
-* [diet](Model\diet.md)
-* [netflow](Model\netflow.md)
+* [simple exmaple](https://github.com/C-Joey/gurobi/blob/master/Model/Example%20mip1.md)
+* [diet](https://github.com/C-Joey/gurobi/blob/master/Model/diet.md)
+* [netflow](https://github.com/C-Joey/gurobi/blob/master/Model/netflow.md)
