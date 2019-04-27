@@ -75,4 +75,4 @@ except GurobiError:
     y 0.0
     z 1.0
     Obj: 3.0
-    
+
