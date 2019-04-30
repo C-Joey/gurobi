@@ -8,7 +8,7 @@ from gurobipy import *
 ```
 
 
-```python
+```Python
 categories, minNutrition, maxNutrition = multidict({
   'calories': [1800, 2200],
   'protein':  [91, GRB.INFINITY],
@@ -151,21 +151,21 @@ printSolution()
     Presolve removed 0 rows and 2 columns
     Presolve time: 0.02s
     Presolved: 4 rows, 10 columns, 37 nonzeros
-    
+
     Iteration    Objective       Primal Inf.    Dual Inf.      Time
            0    0.0000000e+00   1.472500e+02   0.000000e+00      0s
            4    1.1828861e+01   0.000000e+00   0.000000e+00      0s
-    
+
     Solved in 4 iterations and 0.03 seconds
     Optimal objective  1.182886111e+01
-    
+
     Cost: 11.8289
-    
+
     Buy:
     hamburger 0.604514
     milk 6.97014
     ice cream 2.59132
-    
+
     Adding constraint: at most 6 servings of dairy
     Optimize a model with 5 rows, 12 columns and 41 nonzeros
     Coefficient statistics:
@@ -175,8 +175,7 @@ printSolution()
       RHS range        [6e+00, 2e+03]
     Iteration    Objective       Primal Inf.    Dual Inf.      Time
            0    1.1828861e+01   5.698333e+01   0.000000e+00      0s
-    
+
     Solved in 0 iterations and 0.01 seconds
     Infeasible model
     No solution
-    

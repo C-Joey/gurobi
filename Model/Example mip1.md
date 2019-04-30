@@ -9,6 +9,7 @@ s.b
     x,y,z & binary
 \end{cases}  
 $$
+><a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;\max=x&plus;y&plus;2z\\&space;s.b&space;\begin{cases}&space;x&plus;2y&plus;3z&space;&&space;\leq&space;4&space;\\&space;x&plus;y&space;&\geqslant&space;1&space;\\&space;x,y,z&space;&&space;binary&space;\end{cases}&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;\max=x&plus;y&plus;2z\\&space;s.b&space;\begin{cases}&space;x&plus;2y&plus;3z&space;&&space;\leq&space;4&space;\\&space;x&plus;y&space;&\geqslant&space;1&space;\\&space;x,y,z&space;&&space;binary&space;\end{cases}&space;$$" title="$$ \max=x+y+2z\\ s.b \begin{cases} x+2y+3z & \leq 4 \\ x+y &\geqslant 1 \\ x,y,z & binary \end{cases} $$" /></a>
 
 ## **求解过程：**
 
