@@ -1,4 +1,3 @@
-
 from gurobipy import *
 
 # Nutrition guidelines, based on
@@ -9,7 +8,7 @@ categories, minNutrition, maxNutrition = multidict({
     'calories': [1800, 2200],
     'protein':  [91, GRB.INFINITY],
     'fat':      [0, 65],
-    'sodium':   [0, 1779] })
+    'sodium':   [0, 1779]})
 
 foods, cost = multidict({
     'hamburger': 2.49,
@@ -65,7 +64,9 @@ nutritionValues = {
 m = Model("diet")
 
 # Create decision variables for the foods to buy
-buy = m.addVars(foods, name="buy")
+# if vtpye is not defined , vars are continuous variable
+# buy = m.addVars(foods,vtype=GRB.INTEGER, name="buy")
+buy = m.addVars(foods, vtype=GRB.INTEGER, name="buy")
 
 # You could use Python looping constructs and m.addVar() to create
 # these decision variables instead.  The following would be equivalent
@@ -93,6 +94,7 @@ m.addConstrs(
 #  m.addRange(
 #     sum(nutritionValues[f,c] * buy[f] for f in foods), minNutrition[c], maxNutrition[c], c)
 
+
 def printSolution():
     if m.status == GRB.Status.OPTIMAL:
         print('\nCost: %g' % m.objVal)
@@ -105,11 +107,13 @@ def printSolution():
         print('No solution')
 
 # Solve
+
+
 m.optimize()
 printSolution()
 
-print('\nAdding constraint: at most 6 servings of dairy')
-m.addConstr(buy.sum(['milk','ice cream']) <= 6, "limit_dairy")
+print('\n-------------------------\nAdding constraint: at most 6 servings of dairy')
+m.addConstr(buy.sum(['milk', 'ice cream']) <= 6, "limit_dairy")
 
 # Solve
 m.optimize()

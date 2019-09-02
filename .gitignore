@@ -5,3 +5,4 @@ gurobi.log
 venv
 gurobi.log
 *.log
+/Model/diet.py
